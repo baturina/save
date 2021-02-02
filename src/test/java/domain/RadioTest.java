@@ -41,15 +41,6 @@ public class RadioTest {
             assertEquals(expected, actual);
         }
 
-        @Test
-        public void shouldSetCurrentStationHigherMax() {
-            Radio radio = new Radio();
-            radio.setCurrentStation(20);
-            int actual = radio.getCurrentStation();
-            int expected = 20;
-
-            assertEquals(expected, actual);
-        }
 
         @Test
         public void shouldSetNextStationMax() {
@@ -83,17 +74,6 @@ public class RadioTest {
         }
 
 
-
-        @Test
-        public void shouldSetPrevCurrentStationMax() {
-            Radio radio = new Radio();
-            radio.setCurrentStation(19);
-            radio.setPrevCurrentStation();
-            int actual = radio.getCurrentStation();
-            int expected = 19;
-            assertEquals(expected, actual);
-
-        }
 
         @Test
         public void shouldSetPrevStationMin() {
