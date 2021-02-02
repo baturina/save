@@ -43,7 +43,7 @@ public class RadioTest {
         @Test
         public void shouldSetCurrentStationHigherMax() {
             Radio radio = new Radio();
-            radio.setCurrentStation(19);
+            radio.setCurrentStation(20);
             int actual = radio.getCurrentStation();
             int expected = 0;
 
