@@ -1,6 +1,7 @@
 package domain;
 
 import org.junit.Test;
+import org.junit.jupiter.api.Disabled;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -43,9 +44,9 @@ public class RadioTest {
         @Test
         public void shouldSetCurrentStationHigherMax() {
             Radio radio = new Radio();
-            radio.setCurrentStation(0);
+            radio.setCurrentStation(20);
             int actual = radio.getCurrentStation();
-            int expected = 0;
+            int expected = 20;
 
             assertEquals(expected, actual);
         }
