@@ -43,9 +43,9 @@ public class RadioTest {
         @Test
         public void shouldSetCurrentStationHigherMax() {
             Radio radio = new Radio();
-            radio.setCurrentStation(20);
+            radio.setCurrentStation(0);
             int actual = radio.getCurrentStation();
-            int expected = 19;
+            int expected = 0;
 
             assertEquals(expected, actual);
         }
